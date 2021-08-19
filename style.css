@@ -82,19 +82,18 @@ body {
     font-weight: 400;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px rgb(204, 204, 204), -4px -4px 4px #fff;
     position: relative;
-}
-.button:hover{
-    color: #fff;
-    background: rgb(124, 124, 124);
+    transition: 0.3s ease-out;
+	filter: blur(0px);
+    box-shadow: 4px 4px 10px #a9a8b7, -8px -8px 10px #fff
 }
 .button:active{
+	box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff,inset -8px -8px 20px #fff, inset 8px 8px 20px #a9a8b7;
     top: 4px;
 }
 .eraseMode{
-    background-color: red;
-    color: white;
+    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff,inset -8px -8px 20px #fff, inset 8px 8px 20px #a9a8b7;
+    top: 4px;
 }
 
 #slider .ui-state-default, .ui-widget-content .ui-state-default {
